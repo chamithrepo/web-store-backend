@@ -5,9 +5,9 @@ spring:
     application:
       name: web-store-backend
     datasource:
-       url: jdbc:postgresql://localhost:5432/webstore
-       username: postgres
-       password: 1234
+       url: postgres://yxwwvvsjbzfcxa:c5530ed31c6e83a1e1b50af9f9d530c6f3f7a92eca56e5a8d765f9a66aa496f6@ec2-52-7-115-250.compute-1.amazonaws.com:5432/d8802987dmirqd
+       username: yxwwvvsjbzfcxa
+       password: c5530ed31c6e83a1e1b50af9f9d530c6f3f7a92eca56e5a8d765f9a66aa496f6
        platform: postgres
     jpa:
        hibernate:
