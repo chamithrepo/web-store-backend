@@ -1,0 +1,17 @@
+server:
+    port: 8080
+
+spring:
+    application:
+      name: web-store-backend
+    datasource:
+       url: jdbc:postgresql://localhost:5432/webstore
+       username: postgres
+       password: 1234
+       platform: postgres
+    jpa:
+       hibernate:
+         ddl-auto: update
+         format_sql: true
+         show_sql: true
+         generate-ddl: true
