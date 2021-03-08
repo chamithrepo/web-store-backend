@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Table(name = PRODUCT_TABLE_NAME)
 @Entity
-public class Product extends BaseEntity {
+public class Product {
 
 	private UUID id;
 	private String name;
@@ -39,7 +39,6 @@ public class Product extends BaseEntity {
 	@GenericGenerator(name = "uuid2", strategy = "uuid2")
 	@Column(name = PRODUCT_ID, updatable = false, nullable = false)
 	@JsonProperty(value = PRODUCT_ID)
-//	@ApiModelProperty(value = "The dummy identifier, auto generated.")
 	public UUID getId() {
 		return id;
 	}
@@ -50,7 +49,6 @@ public class Product extends BaseEntity {
 
 	@Column(name = PRODUCT_NAME, nullable = false)
 	@JsonProperty(value = PRODUCT_NAME)
-//	@ApiModelProperty(value = "The dummy identifier, auto generated.")
 	public String getName() {
 		return name;
 	}
@@ -61,7 +59,6 @@ public class Product extends BaseEntity {
 
 	@Column(name = CARTON_PRICE, nullable = false)
 	@JsonProperty(value = CARTON_PRICE)
-//	@ApiModelProperty(value = "The dummy identifier, auto generated.")
 	public BigDecimal getCartonPrice() {
 		return cartonPrice;
 	}
@@ -72,7 +69,6 @@ public class Product extends BaseEntity {
 
 	@Column(name = UNITS_PER_CARTON, nullable = false)
 	@JsonProperty(value = UNITS_PER_CARTON)
-//	@ApiModelProperty(value = "The dummy identifier, auto generated.")
 	public BigDecimal getUnitsPerCarton() {
 		return unitsPerCarton;
 	}
@@ -83,7 +79,6 @@ public class Product extends BaseEntity {
 
 	@Column(name = LABOUR_TAX, nullable = false)
 	@JsonProperty(value = LABOUR_TAX)
-//	@ApiModelProperty(value = "The dummy identifier, auto generated.")
 	public BigDecimal getLabourTax() {
 		return labourTax;
 	}
