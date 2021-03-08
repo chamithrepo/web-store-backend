@@ -5,7 +5,6 @@ import java.math.RoundingMode;
 
 import com.cm.webstore.domain.Product;
 
-
 /**
  * @author Chamith_Madusanka
  *
@@ -18,7 +17,7 @@ public class PriceStrategyTwo implements PriceStrategy {
 		BigDecimal cartonsPrice = BigDecimal.ZERO;
 		BigDecimal singleUnitsPrice = BigDecimal.ZERO;
 
-		if (cartons.compareTo(new BigDecimal(3)) > 0) {
+		if (cartons.compareTo(new BigDecimal(3)) >= 0) {
 
 			BigDecimal discountedCartonPrice = product.getCartonPrice().multiply(new BigDecimal(0.1));
 			cartonsPrice = product.getCartonPrice().subtract(discountedCartonPrice).multiply(cartons);
