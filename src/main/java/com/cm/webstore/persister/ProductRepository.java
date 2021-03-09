@@ -7,6 +7,10 @@ import org.springframework.stereotype.Repository;
 
 import com.cm.webstore.domain.Product;
 
+/**
+ * @author Chamith_Madusanka
+ *
+ */
 @Repository
 public interface ProductRepository extends JpaRepository<Product, UUID>{
 	

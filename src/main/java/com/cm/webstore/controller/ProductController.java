@@ -34,7 +34,6 @@ import io.swagger.annotations.ApiOperation;
 @Api(value = PRODUCT_ROOT_PATH)
 public class ProductController {
 
-	@Autowired
 	private ProductService productService;
 
 	@Autowired

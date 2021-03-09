@@ -1,5 +1,10 @@
 package com.cm.webstore.exception;
 
+
+/**
+ * @author Chamith_Madusanka
+ *
+ */
 public class ErrorDetail {
 
 	private int code;

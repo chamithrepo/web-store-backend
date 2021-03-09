@@ -38,7 +38,6 @@ import io.swagger.annotations.ApiOperation;
 @Api(value = PRICE_ROOT_PATH)
 public class PriceController {
 
-	@Autowired
 	private PriceService priceService;
 
 	@Autowired
